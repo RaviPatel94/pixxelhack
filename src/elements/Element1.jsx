@@ -2,7 +2,7 @@ import React from 'react'
 
 function Element1() {
   return (
-    <div>
+    <div className='pt-20'>
         HEllo this is element 1
     </div>
   )
