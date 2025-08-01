@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 const teamMembers = [
   {
     id: 1,
-    name: "David Kim",
+    name: "Ravi Patel",
     position: "DevOps Engineer",
     bio: "Infrastructure specialist with deep knowledge of cloud platforms and automation. Always optimizing for performance and reliability.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
@@ -16,7 +16,7 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Yatharth Singh",
     position: "Product Manager",
     bio: "Strategic product leader with expertise in user research and agile methodologies. Loves turning complex problems into simple solutions.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
