@@ -1,5 +1,20 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import './style.css';
+@import './styles.css';
+
+.hover-blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 998; /* Below the hover-card (z-1000) */
+  pointer-events: none; /* Don't block mouse events */
+  transition: opacity 0.25s ease;
+}
 
 @custom-variant dark (&:is(.dark *));
 
