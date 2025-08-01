@@ -57,10 +57,10 @@ function Navbar() {
 
   return (
     <div>
-      <nav className='flex justify-center sm:justify-between fixed w-screen z-50 h-[38px] bg-[#FDF6E3] backdrop-blur-sm px-4'>
+      <nav className='flex justify-between fixed w-screen z-50 h-[38px] bg-[#FDF6E3] backdrop-blur-sm px-4'>
         <div className='text-3xl cursor-pointer w-[88px] pl-1 sm:block'>CatCafe</div>
         
-        <div className="relative inline-block">
+        <div className="relative hidden sm:block">
           <img ref={catimgref} src="/images/cat.png" alt="Cat" width="90px" className="cursor-grab peer"/>
           
           {/* Left eye */}
