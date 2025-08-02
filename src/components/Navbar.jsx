@@ -92,7 +92,7 @@ function Navbar() {
           className="p-2 pl-10 rounded-md transition-colors duration-200 z-50"
           aria-label="Open menu"
         >
-          <Menu size={24} className="text-gray-700 cursor-pointer" />
+          <Menu size={32} className="text-gray-700 cursor-pointer" />
         </button>
       </nav>
 
