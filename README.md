@@ -1,12 +1,24 @@
-# React + Vite
+# 🐾 Cat Café Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Cat Café**, a virtual space where modern web design meets cozy cat café aesthetics. This project was crafted with love, coffee, and a lot of tail-wagging creativity by **@ravipatel94** and **@snyatharth2005**.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [pixxelhack.vercel.app](https://pixxelhack.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🐱 What is Cat Café?
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+PixxelHack is a **fun, minimal, and responsive cat café-themed website** built using **ReactJS** and **TailwindCSS**. The idea is to create a relaxing and modern web experience, inspired by the calm and friendly vibe of a real-world cat café.
+
+It’s not just a website — it’s an experience:
+
+- A welcoming **landing page** with soft visuals  
+- A smooth **theme toggle** (light & dark)  
+- A calming color palette and interactive layout  
+- A visually rich **About Us** section highlighting the creators  
+- Built for both desktop and mobile visitors
+
+Whether you're a cat lover or a minimalist design enthusiast, PixxelHack gives you both: cuteness and clarity. 🐾
+
+
+
