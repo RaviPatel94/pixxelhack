@@ -121,7 +121,7 @@ function Element3() {
     <div className='min-h-screen px-4 py-8 sm:py-12' id='about'>
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-8 sm:mb-12">
-        <h1 className="text-4xl font-bold mb-4">
+        <h1 className="text-4xl font-mono font-semibold mb-4">
           About Us
         </h1>
         <p className="text-lg sm:text-xl text-gray-600 mb-8">
