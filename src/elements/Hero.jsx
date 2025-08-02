@@ -14,7 +14,7 @@ function Hero() {
   return (
     <div className='h-screen w-screen text-center flex flex-col items-center font-mono justify-center bg-[#FDF6E3] px-4'>
       <p className='w-full max-w-[900px] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-6 mt-12 leading-tight sm:leading-tight md:leading-tight lg:leading-tight'>
-        The Purrrfeact Cat Cafe you have been looking for!!!  
+        The Purrrfect Cat Cafe you have been looking for!!!  
       </p>
       <div className='flex flex-col sm:flex-row gap-3 sm:gap-0'>
         <button 
