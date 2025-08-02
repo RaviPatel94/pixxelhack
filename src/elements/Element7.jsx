@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-// Sample team data
+
 const teamMembers = [
   {
     id: 1,
@@ -8,11 +10,7 @@ const teamMembers = [
     position: "DevOps Engineer",
     bio: "Infrastructure specialist with deep knowledge of cloud platforms and automation. Always optimizing for performance and reliability.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-    contacts: {
-      email: "david@company.com",
-      linkedin: "https://linkedin.com/in/davidkim",
-      github: "https://github.com/davidkim"
-    }
+
   },
   {
     id: 2,
@@ -20,11 +18,7 @@ const teamMembers = [
     position: "Product Manager",
     bio: "Strategic product leader with expertise in user research and agile methodologies. Loves turning complex problems into simple solutions.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-    contacts: {
-      email: "michael@company.com",
-      linkedin: "https://linkedin.com/in/michaelchen",
-      twitter: "https://twitter.com/michaelchen"
-    }
+
   },
   {
     id: 3,
@@ -32,23 +26,14 @@ const teamMembers = [
     position: "UX Designer",
     bio: "Creative designer focused on accessibility and inclusive design. Believes great design should be invisible and intuitive.",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-    contacts: {
-      email: "emily@company.com",
-      linkedin: "https://linkedin.com/in/emilyrodriguez",
-      portfolio: "https://emilydesigns.com"
-    }
   },
 ];
 
-const contactIcons = {
-  email: "✉️",
-  linkedin: "💼",
-  github: "🐙",
-  twitter: "🐦",
-  portfolio: "🌐"
-};
 
-const TeamDirectory = () => {
+const Element7 = () => {
+    useEffect(() => {
+      AOS.init({ duration: 800 });
+    }, []);
   const [hoveredMember, setHoveredMember] = useState(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0, flipX: false, flipY: false });
@@ -112,7 +97,7 @@ const TeamDirectory = () => {
   }, [hoveredMember]); 
 
   return (
-    <div className="font-sans h-screen flex flex-col justify-center items-center max-w-3xl mx-auto p-8">
+    <div id="team" className="font-sans py-44 flex flex-col justify-center items-center max-w-3xl mx-auto p-8">
       <header className="text-center mb-12">
         <h1 className="text-4xl font-mono font-semibold mb-2">Our Team</h1>
         <p className="text-lg">
@@ -124,6 +109,7 @@ const TeamDirectory = () => {
         {teamMembers.map((member) => (
           <div
             key={member.id}
+            data-aos="fade-up"
             onMouseEnter={(e) => handleMouseEnter(member, e)}
             onMouseLeave={handleMouseLeave}
             className="flex items-center p-6 bg-white rounded-xl shadow-sm cursor-pointer transition-all duration-200 border border-slate-200 hover:-translate-y-0.5 hover:shadow-lg"
@@ -175,4 +161,4 @@ const TeamDirectory = () => {
   );
 };
 
-export default TeamDirectory;
+export default Element7;

@@ -65,7 +65,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
           setTimeout(() => {
             setIsLoading(false);
             onLoadingComplete?.();
-          }, 2000); // Show for 2 seconds after completion
+          }, 1000); // Show for 2 seconds after completion
           return 100;
         }
         return prev + 5; // Faster, consistent progress
@@ -79,7 +79,6 @@ const LoadingScreen = ({ onLoadingComplete }) => {
     return null;
   }
 
-  // Calculate which paws should be filled
   const pawsToFill = Math.floor((progress / 100) * 5);
   const activePaw = Math.min(pawsToFill, 4);
 
@@ -96,7 +95,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
         {/* Cat Loading Animation */}
         <div className="mb-8">
           <img 
-            src="/images/catloading.gif" 
+            src="/images/cl.gif" 
             className="h-64 w-64 object-contain drop-shadow-lg" 
             alt="Loading cat animation" 
           />

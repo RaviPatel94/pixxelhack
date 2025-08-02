@@ -58,7 +58,9 @@ function Navbar() {
   return (
     <div>
       <nav className='flex justify-between fixed w-screen z-50 h-[38px] bg-[#FDF6E3] backdrop-blur-sm px-4'>
-        <div className='text-3xl cursor-pointer w-[88px] pl-1 sm:block'>CatCafe</div>
+        <div className='text-3xl cursor-pointer w-[88px] pl-1 sm:block'>
+          <img src="/images/logo.jpg" alt="logo" className='h-12 mt-1 w-12' />
+        </div>
         
         <div className="relative hidden sm:block">
           <img ref={catimgref} src="/images/cat.png" alt="Cat" width="90px" className="cursor-grab peer"/>
@@ -66,7 +68,7 @@ function Navbar() {
           {/* Left eye */}
           <div ref={(el) => (eyeref.current[0] = el)} 
               className="h-2 w-2 bg-black rounded-full absolute z-50 overflow-hidden" 
-              style={{ top: '52px', left: '29px' }} 
+              style={{ top: '51px', left: '29px' }} 
               id="left-eye">
               <div className="bg-white h-1 w-1 rounded-full"></div>
           </div>
@@ -74,7 +76,7 @@ function Navbar() {
           {/* Right eye */}
           <div ref={(el) => (eyeref.current[1] = el)} 
               className="h-2 w-2 bg-black rounded-full absolute z-50 overflow-hidden" 
-              style={{ top: '52px', left: '54px' }} 
+              style={{ top: '51px', left: '54px' }} 
               id="right-eye">
               <div className="bg-white h-1 w-1 rounded-full"></div>
           </div>
@@ -87,7 +89,7 @@ function Navbar() {
         {/* Hamburger Menu Button */}
         <button 
           onClick={() => setIsDrawerOpen(true)}
-          className="p-2 pl-10 hover:bg-gray-100 rounded-md transition-colors duration-200 z-50"
+          className="p-2 pl-10 rounded-md transition-colors duration-200 z-50"
           aria-label="Open menu"
         >
           <Menu size={24} className="text-gray-700 cursor-pointer" />

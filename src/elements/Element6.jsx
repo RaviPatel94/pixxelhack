@@ -43,12 +43,12 @@ const reviews = [
 
   return (
     <div className='bg-[#FDF6E3] py-20'>
-      <h1 className='text-3xl ml-5 font-mono font-semibold mb-4'> What our customer's said!</h1>
+      <h1 className='text-4xl ml-5 font-mono font-semibold mb-4'> What our customer's said!</h1>
       <Marquee pauseOnHover className=" rounded-md">
         {reviews.map((review, i) => (
           <div
             key={i}
-            className="flex flex-col w-44 gap-4 border bg-white border-gray-300 rounded-lg px-4 py-4 shadow-md min-w-[300px]"
+            className="flex flex-col w-44 xl:w-96  hover:scale-105 gap-4 border bg-white border-gray-300 rounded-lg px-4 py-4 shadow-md min-w-[300px]"
           >
             <div className='flex '>
               <img
